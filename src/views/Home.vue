@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 .content {
   margin: 0 auto;
   padding: 1em;

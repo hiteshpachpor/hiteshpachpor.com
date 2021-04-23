@@ -15,7 +15,13 @@
         </div>
 
         <div class="name">
-          <h4>{{ job.company.name }}</h4>
+          <h4>
+            {{ job.company.name }}
+
+            <a class="link" :href="job.company.website" target="_blank">
+              <font-awesome-icon icon="external-link-alt" />
+            </a>
+          </h4>
 
           <div class="location">
             {{ job.company.location }}
@@ -25,10 +31,6 @@
 
       <div class="about">
         {{ job.company.about }}
-      </div>
-
-      <div class="website">
-        <a :href="job.company.website" target="_blank">Link</a>
       </div>
     </div>
 
@@ -44,7 +46,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 ul {
   margin: 0.5em 0 1em;
   padding-left: 1em;
@@ -78,6 +80,12 @@ ul {
 
   .name {
     margin-left: 0.5em;
+
+    .link {
+      margin-left: 0.25rem;
+      font-size: 0.75em;
+      color: var(--light-text-color);
+    }
   }
 
   .location {

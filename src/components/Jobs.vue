@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 h2 {
   margin: 0.5rem 0 1rem 0;
 }

@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 .profile-photo {
   height: calc(100vw * 0.6 - 0.7em);
   width: 60%;

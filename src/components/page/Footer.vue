@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 .footer {
   color: #FFF;
   background-color: #111;

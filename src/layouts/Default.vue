@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
 .default {
   height: 100vh;
 }
