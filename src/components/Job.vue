@@ -43,6 +43,10 @@
         </li>
       </ul>
     </div>
+
+    <div class="tag-list">
+      <TagList :tags="job.tags" />
+    </div>
   </div>
 </template>
 
@@ -99,13 +103,22 @@ ul {
     border-left: 0.25rem solid;
   }
 }
+
+.tag-list {
+  padding: 0 0 1rem;
+}
 </style>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import TagList from "@/components/TagList.vue";
 import moment from 'moment';
 
-@Component
+@Component({
+  components: {
+    TagList,
+  },
+})
 export default class Header extends Vue {
   @Prop() job!: any;
 

@@ -13,7 +13,7 @@ import {
   faInstagram,
   faLinkedin,
   faMedium,
-  faStackOverflow,
+  faStackExchange,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -26,7 +26,7 @@ library.add(
   faLinkedin,
   faMapMarked,
   faMedium,
-  faStackOverflow,
+  faStackExchange,
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

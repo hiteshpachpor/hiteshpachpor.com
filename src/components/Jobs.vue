@@ -16,7 +16,7 @@ h2 {
 .jobs {
   > div {
     & + div {
-      border-top: 1px solid var(--light-text-color);
+      border-top: 1px solid var(--grey-background);
     }
   }
 }

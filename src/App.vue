@@ -31,7 +31,7 @@ a, a:visited, a:active {
   --text-color: #2c3e50;
   --light-text-color: #6f8498;
   --blue-background: #186dc1;
-  --grey-background: #fff;
+  --grey-background: #ddd;
   --white: #fff;
 }
 </style>

@@ -15,11 +15,25 @@
     </div>
 
     <div class="contact">
-      <font-awesome-icon icon="envelope" />
-      <font-awesome-icon :icon="['fab', 'linkedin']" />
-      <font-awesome-icon :icon="['fab', 'github']" />
-      <font-awesome-icon :icon="['fab', 'medium']" />
-      <font-awesome-icon :icon="['fab', 'stack-overflow']" />
+      <a :href="portfolio.me.social.email" target="_blank">
+        <font-awesome-icon icon="envelope" />
+      </a>
+
+      <a :href="portfolio.me.social.linkedin" target="_blank">
+        <font-awesome-icon :icon="['fab', 'linkedin']" />
+      </a>
+
+      <a :href="portfolio.me.social.github" target="_blank">
+        <font-awesome-icon :icon="['fab', 'github']" />
+      </a>
+
+      <a :href="portfolio.me.social.medium" target="_blank">
+        <font-awesome-icon :icon="['fab', 'medium']" />
+      </a>
+
+      <a :href="portfolio.me.social.stackExchange" target="_blank">
+        <font-awesome-icon :icon="['fab', 'stack-exchange']" />
+      </a>
     </div>
 
     <div class="links">
@@ -43,7 +57,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: var(--blue-background);
-  color: var(--grey-background)
+  color: var(--white);
 }
 
 .image {
@@ -72,6 +86,10 @@ h1 {
 .contact {
   margin-top: 0.5rem;
   color: rgba(255, 255, 255, 0.4);
+
+  > a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
 
   > * {
     font-size: 2rem;
