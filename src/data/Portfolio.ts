@@ -3,14 +3,13 @@ import { Portfolio } from "@/types/Portfolio";
 const portfolio: Portfolio = {
   me: {
     name: "Hitesh Pachpor",
-    about: "Seasoned engineering manager with over 9 years of work experience in the eCommerce domain. I've led engineering teams of 12+ people at multiple organisations.",
+    about: "Seasoned engineering manager with over 8 years of work experience in the eCommerce domain. I've led engineering teams of 12+ people at multiple organisations.",
     photo: "dp.jpeg",
     location: "Dubai, UAE",
     contact: {
       email: "hiteshspac@gmail.com",
     },
     social: {
-      email: "mailto:hiteshspac@gmail.com",
       linkedin: "https://www.linkedin.com/in/hitesh-pachpor/",
       github: "https://github.com/hiteshpachpor",
       medium: "https://medium.com/@hiteshspac",
@@ -58,8 +57,8 @@ const portfolio: Portfolio = {
         logo: "companies/paytm-insider.png",
       },
       period: {
-        from: new Date(2019, 6),
-        to: new Date(2020, 8),
+        from: new Date(2019, 6, 1),
+        to: new Date(2020, 8, 30),
       },
       current: false,
       position: "Engineering Manager",
@@ -101,10 +100,10 @@ const portfolio: Portfolio = {
       ],
       tags: [
         "Magento 1.8",
-        "Magento 2.2",
-        "Laravel 5.x",
-        "PHP",
+        "Magento 2.1",
+        "Laravel 5.2",
         "MySQL",
+        "AngularJS",
         "Less",
         "AWS",
       ],
@@ -118,8 +117,8 @@ const portfolio: Portfolio = {
         logo: "companies/iksula.png",
       },
       period: {
-        from: new Date(2013, 0),
-        to: new Date(2015, 5),
+        from: new Date(2013, 0, 1),
+        to: new Date(2015, 5, 30),
       },
       current: false,
       position: "Software Developer",
@@ -132,10 +131,10 @@ const portfolio: Portfolio = {
       tags: [
         "Magento 1.7",
         "Laravel 4.2",
-        "PHP",
         "MySQL",
         "HTML",
         "CSS",
+        "Javascript",
         "Linux",
       ],
     },

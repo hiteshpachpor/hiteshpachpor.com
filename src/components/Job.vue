@@ -5,7 +5,7 @@
     </div>
 
     <div class="period">
-      {{ fromDate }} - {{ toDate }}
+      {{ fromDate }} - {{ toDate }} ({{ duration }})
     </div>
 
     <div class="company">
@@ -30,6 +30,10 @@
       </div>
 
       <div class="about">
+        <span class="quote-icon">
+          <font-awesome-icon icon="quote-left" />
+        </span>
+
         {{ job.company.about }}
       </div>
     </div>
@@ -99,8 +103,12 @@ ul {
 
   .about {
     margin: 1rem 0;
-    padding-left: 0.75rem;
-    border-left: 0.25rem solid;
+    color: var(--light-text-color);
+
+    .quote-icon {
+      font-size: 0.5em;
+      vertical-align: text-top;
+    }
   }
 }
 </style>
@@ -128,6 +136,34 @@ export default class Header extends Vue {
     }
 
     return moment(this.job.period.to).format("MMM YYYY");
+  }
+
+  get duration() {
+    let from = this.job.period.from;
+    let to = this.job.period.to;
+
+    if (!to) {
+      to = moment.now();
+    }
+
+    const years = moment.duration(moment(to).diff(moment(from))).years();
+    const months = moment.duration(moment(to).diff(moment(from))).months();
+
+    let duration = [];
+
+    if (years == 1) {
+      duration.push(`${years} year`);
+    } else if (years > 0) {
+      duration.push(`${years} years`);
+    }
+
+    if (months == 1) {
+      duration.push(`${months} month`);
+    } else if (months > 0) {
+      duration.push(`${months} months`);
+    }
+
+    return duration.join(' ');
   }
 }
 </script>

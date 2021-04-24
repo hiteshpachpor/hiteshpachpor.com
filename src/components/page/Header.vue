@@ -15,7 +15,7 @@
     </div>
 
     <div class="contact">
-      <a :href="portfolio.me.social.email" target="_blank">
+      <a :href="`mailto:${portfolio.me.contact.email}`" target="_blank">
         <font-awesome-icon icon="envelope" />
       </a>
 
@@ -47,12 +47,12 @@
       </router-link>
 
       <router-link
-        to="/side-projects"
+        to="/more"
         class="link"
         active-class="current"
         exact
       >
-        Side Projects
+        More
       </router-link>
 
       <router-link

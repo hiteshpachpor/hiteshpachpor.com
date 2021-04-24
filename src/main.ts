@@ -6,6 +6,8 @@ import {
   faEnvelope,
   faExternalLinkAlt,
   faMapMarked,
+  faQuoteLeft,
+  faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
@@ -26,6 +28,8 @@ library.add(
   faLinkedin,
   faMapMarked,
   faMedium,
+  faQuoteLeft,
+  faQuoteRight,
   faStackExchange,
 );
 
