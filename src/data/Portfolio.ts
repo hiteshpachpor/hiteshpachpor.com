@@ -12,7 +12,7 @@ const portfolio: Portfolio = {
     social: {
       linkedin: "https://www.linkedin.com/in/hitesh-pachpor/",
       github: "https://github.com/hiteshpachpor",
-      medium: "https://medium.com/@hiteshspac",
+      medium: "https://hiteshspac.medium.com",
       stackExchange: "https://stackexchange.com/users/2137427/hiteshspac?tab=accounts",
     },
   },
