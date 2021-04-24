@@ -6,9 +6,19 @@
 
 <style lang="less" scoped>
 .tags {
+  margin-left: -1rem;
+  margin-right: -1rem;
   padding: 0 0 1rem;
   overflow-x: scroll;
   white-space: nowrap;
+
+  .tag:first-child {
+    margin-left: 1em;
+  }
+
+  .tag:last-child {
+    margin-right: 1em;
+  }
 }
 </style>
 
