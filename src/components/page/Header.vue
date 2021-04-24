@@ -37,10 +37,41 @@
     </div>
 
     <div class="links">
-      <router-link class="link" to="/">Resume</router-link>
-      <router-link class="link" to="/">Side Projects</router-link>
-      <router-link class="link" to="/">Hobbies</router-link>
-      <router-link class="link" to="/">Posts</router-link>
+      <router-link
+        to="/"
+        class="link"
+        active-class="current"
+        exact
+      >
+        Resume
+      </router-link>
+
+      <router-link
+        to="/side-projects"
+        class="link"
+        active-class="current"
+        exact
+      >
+        Side Projects
+      </router-link>
+
+      <router-link
+        to="/hobbies"
+        class="link"
+        active-class="current"
+        exact
+      >
+        Hobbies
+      </router-link>
+
+      <router-link
+        to="/posts"
+        class="link"
+        active-class="current"
+        exact
+      >
+        Posts
+      </router-link>
     </div>
   </div>
 </template>
@@ -52,7 +83,7 @@ h1 {
 }
 
 .header {
-  padding: 1em;
+  padding: 1em 1em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,16 +132,19 @@ h1 {
 }
 
 .links {
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
 
   .link {
+    padding: 0.75em 1em;
     text-align: center;
 
-    + .link {
-      margin-left: 2em;
+    &.current {
+      color: var(--blue-background);
+      background-color: var(--white);
+      border-radius: 0.5em 0.5em 0 0;
     }
   }
 }

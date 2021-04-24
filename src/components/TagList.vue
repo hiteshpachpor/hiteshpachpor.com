@@ -6,8 +6,9 @@
 
 <style lang="less" scoped>
 .tags {
-  display: flex;
-  flex-basis: row;
+  padding: 0 0 1rem;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 </style>
 

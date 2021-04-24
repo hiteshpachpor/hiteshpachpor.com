@@ -103,10 +103,6 @@ ul {
     border-left: 0.25rem solid;
   }
 }
-
-.tag-list {
-  padding: 0 0 1rem;
-}
 </style>
 
 <script lang="ts">
